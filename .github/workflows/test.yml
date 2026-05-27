@@ -544,6 +544,7 @@ jobs:
     - name: Execute
       id: execute
       env:
+        playwright_workers: 12
         cargo_profile: ${{matrix.cargo_profile}}
         rust_toolchain: ${{matrix.rust_toolchain}}
         rust_target: ${{matrix.rust_target}}
